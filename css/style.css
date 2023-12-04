@@ -233,6 +233,28 @@ span {
     width: 130%;
 }
 
+/* Skills */
+
+.btn2 {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.2rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+
+.btn2:last-child {
+    margin-right: 0;
+}
+
+/* Parte Portfolio Principal */
+
 .portfolio {
     background: var(--second-bg-color);
     min-height: auto;
@@ -312,6 +334,50 @@ span {
     color: var(--second-bg-color);
 }
 
+/* Portfolio Páginas */
+
+.portfolio-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.portfolio-container2 .portfolio-box2 {
+    position: relative;
+    border-radius: 2rem;
+    /*box-shadow: 0 0 1rem var(--bg-color);*/
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box2 img {
+    width: 80%;
+    transition: .5s ease;
+}
+
+.portfolio-box2:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-box2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+}
+
+.portfolio-content {
+    font-size: 1.5rem;
+    margin: .3rem 0 1rem;
+}
+
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
@@ -367,6 +433,15 @@ span {
     background: var(--second-bg-color);
 }
 
+.footer2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--main-bg-color);
+}
+
 .footer-text p {
     font-size: 1.6rem;
 }
@@ -413,7 +488,7 @@ span {
 }
 
 @media (max-width: 879px) {
-    .portfolio-container {
+    .portfolio-container, .portfolio-container2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -500,7 +575,7 @@ span {
 }
 
 @media (max-width: 580px) {
-    .portfolio-container {
+    .portfolio-container, .portfolio-container2 {
         grid-template-columns: 1fr;
     }
 }
