@@ -334,12 +334,12 @@ span {
     color: var(--second-bg-color);
 }
 
-/* Portfolio Páginas */
+/* Portfolio Página 2 */
 
 .portfolio-container2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: flex-start;
+    align-items: center;
     gap: 2.5rem;
 }
 
@@ -352,12 +352,7 @@ span {
 }
 
 .portfolio-box2 img {
-    width: 80%;
-    transition: .5s ease;
-}
-
-.portfolio-box2:hover img {
-    transform: scale(1.1);
+    width: 90%;
 }
 
 .portfolio-box2{
@@ -371,11 +366,52 @@ span {
     align-items: center;
     flex-direction: column;
     padding: 0 4rem;
-}
-
-.portfolio-content {
     font-size: 1.5rem;
     margin: .3rem 0 1rem;
+}
+
+/* Portfolio Página 3 */
+
+.portfolio-container3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-container3 .portfolio-box3 {
+    position: relative;
+    border-radius: 2rem;
+    /*box-shadow: 0 0 1rem var(--bg-color);*/
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box3 img {
+    width: 100%;
+}
+
+.portfolio-box3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    font-size: 1.5rem;
+    margin: .3rem 0 1rem;
+}
+
+/* Portfolio Página 4*/
+.portfolio-box-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
 }
 
 .contact {
@@ -488,7 +524,7 @@ span {
 }
 
 @media (max-width: 879px) {
-    .portfolio-container, .portfolio-container2 {
+    .portfolio-container, .portfolio-container2, .portfolio-container3 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -575,7 +611,7 @@ span {
 }
 
 @media (max-width: 580px) {
-    .portfolio-container, .portfolio-container2 {
+    .portfolio-container, .portfolio-container2, .portfolio-container3 {
         grid-template-columns: 1fr;
     }
 }

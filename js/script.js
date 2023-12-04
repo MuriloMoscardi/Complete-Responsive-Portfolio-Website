@@ -48,7 +48,7 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img, .training img, .experience img, .skills img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content, .portfolio-content', { origin: 'right' });
+ScrollReveal().reveal('.home-content p, .about-content, .portfolio-box2, .portfolio-box3', { origin: 'right' });
 
 
 /*==================== typed js ====================*/
